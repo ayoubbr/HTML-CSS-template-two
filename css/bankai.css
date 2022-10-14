@@ -3,7 +3,7 @@
   --main-color: #233dff;
   --second-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
-  --section-padding: 100px;
+  --section-padding: 60px;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -695,11 +695,34 @@ header nav .form i {
   height: 100%;
   background-color: rgb(0 0 0 / 75%);
 }
+.quote q {
+  font-style: italic;
+}
+.quote q::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10d";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+  font-size: 22px;
+}
+
+.quote q::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+  font-size: 22px;
+}
+
 .quote .container {
   position: relative;
 }
 .quote q {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 20px;
   display: block;
 }
@@ -836,6 +859,7 @@ header nav .form i {
   border: 1px solid white;
   border-right: none;
   background: none;
+  color: white;
   padding: 20px 20px 20px 60px;
   caret-color: var(--main-color);
   width: calc(100% - 130px);
@@ -848,6 +872,7 @@ header nav .form i {
   border: 1px solid white;
   border-left: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .subscribe form input[type="email"]:focus,
 .subscribe form input[type="submit"]:focus {
