@@ -11,19 +11,14 @@ lis.forEach((element) => {
 
 // //////////////////////
 let landing = document.querySelector(".landing");
-let right = document.getElementById("right");
+let next = document.getElementById("right");
+let prev = document.getElementById("left");
 
-let left = document.getElementById("left");
+let ar = ["../images/landing.jpg", "../images/1.png", "../images/2.png"];
+next.onclick = nextSlide;
+prev.onclick = prevSlide;
 
-// let ar = ["../images/landing.jpg", "../images/1.png", "../images/2.png"];
+function nextSlide() {}
+function prevSlide() {}
 
-// right.onclick = function () {
-//   for (let index = 0; index < ar.length; index++) {
-//     landing.style.backgroundImage = `url(${ar[index]})`;
-//     console.log(index);
-//   }
-// };
 
-// left.onclick = function () {
-//   landing.style.backgroundImage = `url(${ar[index -1]})`;
-// };
